@@ -1,32 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
+    <!-- 3 meta tags -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>dhearanaqah (Dhea R. Anaqah)</title>
+    
+    <!-- bootstrap 4 cdn - referensi bootstrapcdn.com -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- internal css -->
     <style>
-        body{
+        body,html{
+            height: 100%;
+            font-size: 100%;
             font-family: "Roboto";
-        }
+            text-align: center;
+        }   
     </style>
 </head>
 
 <body>
-    <h1>/dhearanaqah</h1> 
-    <p style="font-size:24px;">hai dunia &#128075 &#127758 </p>
-    <a href="https://github.com/dhearanaqah" target="_blank">github</a>
     
-    <!-- atribut id="id_tahun" memanggil hasil eksekusi tahun saat ini -->
-    <p id="id_tahun"></p>
+    <!-- container -->
+    <div class="container h-100">
+        <!-- row -->
+        <div class="row h-100">
+            <!-- col -->
+            <div class="col align-self-center">
+                <h1>/dhearanaqah</h1> 
+                <p style="font-size:24px;">hai dunia &#128075 &#127758 </p>
+                <a href="https://github.com/dhearanaqah" target="_blank">github</a>
+                <p id="id_tahun"></p>
+            </div>  
+        </div>  
+    </div>
        
-<!-- javascript -->
+<!-- js tahun -->
 <script>
-    // variabel "tahun" memuat object "new Date()" yang memanggil "getFullYear()"
+    // id_tahun = tahun = tahun saat ini
     var tahun = new Date().getFullYear();
-    // hasil eksekusi akan ditampilkan pada elemen yang memanggil atribut id="id_tahun"
     document.getElementById("id_tahun").innerHTML = tahun;
 </script>
+
+<!-- bootstrap 4 cdn - referensi bootstrapcdn.com -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 
 </html> 
