@@ -16,6 +16,17 @@
     <h1>/dhearanaqah</h1> 
     <p style="font-size:24px;">hai dunia &#128075 &#127758 </p>
     <a href="https://github.com/dhearanaqah" target="_blank">github</a>
+    
+    <!-- atribut id="id_tahun" memanggil hasil eksekusi tahun saat ini -->
+    <p id="id_tahun"></p>
+       
+<!-- javascript -->
+<script>
+    // variabel "tahun" memuat object "new Date()" yang memanggil "getFullYear()"
+    var tahun = new Date().getFullYear();
+    // hasil eksekusi akan ditampilkan pada elemen yang memanggil atribut id="id_tahun"
+    document.getElementById("id_tahun").innerHTML = tahun;
+</script>
 </body>
 
 </html> 
