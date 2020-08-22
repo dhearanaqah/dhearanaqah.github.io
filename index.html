@@ -12,7 +12,7 @@
     <!-- bootstrap 4 cdn - referensi bootstrapcdn.com -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
     <!-- internal css -->
     <style>
         body,html{
@@ -20,7 +20,15 @@
             font-size: 100%;
             font-family: "Roboto";
             text-align: center;
-        }   
+        } 
+        #air{
+            font-size:22px;
+            /*transition: transform 2s;*/
+        }
+        #air:active{
+            transform: translate(0px,45px);
+            opacity: 30%;
+        }  
     </style>
 </head>
 
@@ -32,10 +40,14 @@
         <div class="row h-100">
             <!-- col -->
             <div class="col align-self-center">
-                <h1>/dhearanaqah</h1> 
-                <p style="font-size:24px;">hai dunia &#128075 &#127758 </p>
+                
+                <h1>siram tanaman</h1> 
+                <p style="font-size:24px;">klik airnya </p>
+                <p id="air">&#128167</p>
+                <p style="font-size:42px;">&#127793</p>
                 <a href="https://github.com/dhearanaqah" target="_blank">github</a>
                 <p id="id_tahun"></p>
+                
             </div>  
         </div>  
     </div>
