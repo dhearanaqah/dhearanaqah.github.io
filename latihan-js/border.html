@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>latihan javascript & css eksternal</title>
+    </head>
+    <body>
+        <h1>Border</h1>
+
+            <p id="display-vote">Silahkan memilih opsi border yang tersedia</p>
+
+            
+            <button onClick="groove()"> Groove </button>
+            <button onClick="double()"> Double </button>
+            <button onClick="dotted()"> Dotted </button>
+            <button onClick="dashed()"> Dashed </button>
+            <button onClick="outset()"> Outset </button>
+            <button onClick="inset()"> Inset </button>
+            <button onClick="solid()"> Solid </button>
+            <button onClick="none()"> None </button>
+            
+            <p id="demo"></p>
+
+            <script type="text/javascript">
+                function solid(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Solid";
+                    document.getElementById("demo").style.border="solid";
+                    document.getElementById("demo").innerHTML="Solid";
+                }
+                
+
+                function groove(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Groove";
+                    document.getElementById("demo").style.border="groove";
+                    document.getElementById("demo").innerHTML="Groove";
+                }
+                function double(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Double";
+                    document.getElementById("demo").style.border="double";
+                    document.getElementById("demo").innerHTML="Double";
+                }
+                function dotted(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Dotted";
+                    document.getElementById("demo").style.border="dotted";
+                    document.getElementById("demo").innerHTML="Dotted";
+                }
+                function dashed(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Dashed";
+                    document.getElementById("demo").style.border="dashed";
+                    document.getElementById("demo").innerHTML="Dashed";
+                }
+                function inset(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Inset";
+                    document.getElementById("demo").style.border="inset";
+                    document.getElementById("demo").innerHTML="Inset";
+                }
+                function outset(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style Outset";
+                    document.getElementById("demo").style.border="outset";
+                    document.getElementById("demo").innerHTML="Outset";
+                }
+                function none(){
+                    document.getElementById("display-vote").innerHTML = "Anda memilih style None";
+                    document.getElementById("demo").style.border="none";
+                    document.getElementById("demo").innerHTML="None";
+                }
+                
+            </script>
+    </body>
+</html>
