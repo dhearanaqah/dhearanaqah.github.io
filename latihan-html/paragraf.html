@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Latihan 1 - Paragraf</title>
+    </head>
+    <body>
+        <!-- Daftar Isi -->
+        <h1 id="home"> | Daftar Isi |</h1>
+        <hr>
+        
+        <h3>
+            | <a href="#part1">1. Format Teks</a>
+            | <a href="#part2">2. Paragraf dan Gambar</a>
+            | <a href="#part3">3. List</a>
+            | <a href="#part4">4. Tabel</a>
+            | <a href="#part5">5. Form</a>
+        </h3>
+        <hr>
+
+        <!-- 1. FORMAT TEKS -->
+        <h2 id="part1">:: 1. Format Teks</h2><hr>
+        
+        <!-- digunakan untuk menebalkan teks -->
+        <b>Ini contoh teks tebal.</b><br>
+        <strong>Ini contoh teks strong.</strong><br><br>
+
+        <!-- ukuran lebih besar, namun tidak tebal -->
+        <big>Ini contoh teks big.</big><br>
+        <!-- ukuran lebih kecil dari teks regular -->
+        <small>Ini contoh teks small.</small><br><br>
+
+        <!-- kombinasi dua tag --> 
+        <b> 
+            <big>Ini teks besar dan tebal.</big><br>
+            <small>Ini teks kecil dan tebal.</small><br>
+        </b><br>
+
+        <!-- digunakan untuk memberikan teks miring -->
+        <i>Ini teks miring.</i><br>
+        <em>Ini juga teks miring.</em><br><br>
+
+        <!-- subscript tag <sub> -->
+        H<sub>2</sub>O <br>
+        <!-- superscript tag <sup> -->
+        4<sup>2</sup> = 16 <br><br>
+        
+        <!-- terbalik -->
+        <bdo dir="rtl"> terbalik</bdo>
+        <p>Diskon <del>50%</del> 75%</p>
+
+        <!-- singkatan -->
+        <abbr title="Abbrebation">ABBR</abbr><br>
+        <!-- link eksternal -->
+        <a href ="http://www.google.com">Ini link ke Google.</a><br>
+        <!-- simbol -->
+        <p>&#10084</p>
+
+        <p><a href="#home">Kembali ke atas</a></p>
+		
+        <!-- 2. PARAGRAF DAN GAMBAR -->
+        <hr><h2 id="part2">:: 2. Paragraf dan Gambar</h2><hr>
+        <h3 align="center">Judul Ini Menggunakan Heading 3</h3>
+        <p align="justify">
+            Di bawah paragraf ini, terdapat dua gambar. <b>Gambar pertama</b> adalah gambar bunga berwarna kuning. Gambar pertama tersimpan dalam satu folder yang sama dengan <i>file</i> ini.
+            Adapun <b>gambar kedua</b> adalah gambar daun berwarna hijau. Gambar kedua terdapat pada folder yang berbeda, tetapi masih satu <i>root</i>. Kedua gambar tersebut meggunakan <i>border</i>. 
+        </p>
+        <center>
+            <img src="bunga.png" width="200px" alt="ini bunga" border="5">
+            <img src="gambar/daun.png" width="200px" alt="ini daun" border="5">
+        </center>
+
+        <p><a href="#home">Kembali ke atas</a></p>
+        <!-- 3. LIST -->
+        <hr><h2 id="part3">:: 3. List</h2><hr>
+
+        <!-- ordered list-->
+        <h4>Ordered List</h4>
+		<ol>
+            <li>satu</li>
+            <li>dua</li>
+            <li>tiga</li>
+        </ol>
+            
+        <!-- unordered list-->
+        <h4>Unordered List (Disc)</h4>
+        <ul type="disc">
+            <li>satu</li>
+            <li>dua</li>
+            <li>tiga</li>
+        </ul>
+        
+        <h4>Unordered List (Square)</h4>
+        <ul type="square">
+            <li>satu</li>
+            <li>dua</li>
+            <li>tiga</li>
+        </ul>
+
+        <p><a href="#home">Kembali ke atas</a></p>
+
+        <!-- 4. TABEL -->
+        <hr><h2 id="part4">:: 4. Tabel</h2><hr>
+
+        <!-- tabel meggunakan colspan-->
+	    <h4>Tabel Menggunakan Colspan</h4>
+        <table border="1px" style="width:100%">
+		<tr>
+			<th>Nama</th>
+			<th colspan="2">Telepon</th>
+			
+		</tr>
+		<tr>
+			<td>Ann</td>
+			<td>081 123 456 789</td>
+			<td>081 123 123 123</td>
+		</tr>
+	    </table>
+	
+        <!-- tabel pakai rowspan-->
+        <h4>Tabel Menggunakan Rowspan</h4>
+        <table border="1px" style="width:100%">
+            <tr>
+                <th>Nama</th>
+                <td>Ann</td>
+            </tr>
+            
+            <tr>
+                <th rowspan="3">Telepon</th>
+                <td>081 123 123 123</td>
+            </tr>
+            <tr>
+                <td>082 212 212 212</td>
+            </tr>
+            <tr>
+                <td>082 212 212 212</td>
+            </tr>
+        </table>
+
+        <p><a href="#home">Kembali ke atas</a></p>
+		
+        <!-- 5. FORM -->
+        <hr><h2 id="part5">:: 5. Form</h2><hr>
+
+            <!-- form -->
+            <form>
+                <!-- fieldset, digunakan untuk mengelompokkan data yang berhubungan pada satu form-->
+                <fieldset>
+                    <!-- Legend, memberi keterangan form -->
+                    <legend>Data Mahasiswa</legend>
+                    Nama Mahasiswa: <br>
+                    <input type="text" name="nama_mhs" value="Dhea R. Anaqah"> <br>
+                    Fakultas : <br>
+                    <!-- dropdown -->
+                    <select name="fakultas">
+                    <option>-- pilih salah satu --</option>
+                        <option value="mipa">MIPA</option>
+                        <option value="sekolah vokasi" selected>Sekolah Vokasi</option>
+                        <option value="geografi">Geografi</option>
+                        <option value="teknik">Teknik</option>
+                    </select> <br>
+
+                    Jenis Kelamin : <br>
+                    <!-- jenis radio satu kategori satu name-->
+		            <input type="radio" name="jk">Laki-laki <br>
+                    <input type="radio" name="jk">Perempuan <br>
+
+                    <!-- textarea -->
+                    Alamat : <br>
+                    <textarea name="alamat" rows="5" cols="30"></textarea> <br>
+                    
+                    <!-- upload file-->
+                    Berkas : <br>
+                    <input type="file" multiple> <br>
+                            
+                    Nomor : <br> 
+                    <!-- input number -->
+                    <input type="number" min="0" max="25" step="3"> <br>
+                    
+                    Taggal Lahir : <br>
+                    <!-- input date -->
+                    <input type="date" min="2000-01-12" max="2016-09-10"> <br>
+                    
+                    Email : <br>
+                    <!-- input email -->
+                    <input type="email"> <br>
+                    
+                    <!-- checkbox -->
+                    <input type="checkbox" name="toa"> Saya sudah membaca ketentuan dan syarat yang berlaku.
+                    
+                    <br><br>
+                    <button type="button" onclick="alert('Selamat Datang')">Klik Disini</button>
+                    <input type="reset" value="Atur Ulang Data">
+                    
+                    <input type="submit" value="Kirim">
+                </fieldset>	
+            </form>
+
+        <!-- KEMBALI KE ATAS -->
+        <p>
+            <a href="#home">Kembali ke atas</a>
+        </p>
+    
+        <!-- FOOTER -->
+        <hr>
+        <p align="center"><b>&copy 2020 | Web 101</b></p>
+        <hr>
+        
+
+    </body>
+</html>
